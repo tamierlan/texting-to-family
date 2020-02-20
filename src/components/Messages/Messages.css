@@ -2,4 +2,5 @@
   padding: 5% 0;
   overflow: auto;
   flex: auto;
+  background: url("../image/akem.jpeg")center/cover no-repeat;
 }
