@@ -2,7 +2,6 @@ html, body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
-  background: url("../image/tommy.jpeg")center/cover no-repeat;
 }
 
 #root {
@@ -19,11 +18,14 @@ html, body {
   text-align: center;
   height: 100vh;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: #1A1A1D;
 }
 
 .joinInnerContainer {
-  width: 50%;
+  width: 20%;
+}
+.joinInnerContainer img {
+  height: 300px;
 }
 
 .joinInput {
@@ -37,9 +39,6 @@ html, body {
   font-size: 2.5em;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
-}
-input {
-  text-align: center;
 }
 
 .button {

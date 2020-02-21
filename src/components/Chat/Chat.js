@@ -19,6 +19,7 @@ const Chat = ({ location }) => {
   const [messages, setMessages] = useState([]);
   const ENDPOINT = 'https://git.heroku.com/ermanbetovtor.git/';
 
+
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
@@ -61,11 +62,11 @@ const Chat = ({ location }) => {
   return (
     <div className="outerContainer">
       <div className="container">
-          <InfoBar room={room} />
-          <div className="picture">
-            <Messages messages={messages} name={name} />
-          </div>
-          <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
+        <InfoBar room={room} />
+        <div className="picture">
+          <Messages messages={messages} name={name} />
+        </div>
+        <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
       </div>
       <TextContainer users={users}/>
     </div>
