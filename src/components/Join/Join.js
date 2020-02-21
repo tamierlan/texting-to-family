@@ -12,7 +12,7 @@ export default function SignIn() {
       <div className="joinInnerContainer">
         <h3 className="heading">кошул Таминин групасына</h3>
         <div>
-          <input placeholder="атынызды жаз" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
+          <input placeholder="атынызды жазыныз" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
         </div>
         <Link onClick={e => (!name || !room) ? e.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}>
           <button className={'button mt-20'} type="submit">баскычты бас</button>

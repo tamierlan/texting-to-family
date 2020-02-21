@@ -17,7 +17,7 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = 'https://family-chat-app.herokuapp.com/';
+  const ENDPOINT = 'https://git.heroku.com/ermanbetovtor.git/';
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -62,7 +62,9 @@ const Chat = ({ location }) => {
     <div className="outerContainer">
       <div className="container">
           <InfoBar room={room} />
-          <Messages messages={messages} name={name} />
+          <div className="picture">
+            <Messages messages={messages} name={name} />
+          </div>
           <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
       </div>
       <TextContainer users={users}/>
