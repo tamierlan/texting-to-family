@@ -17,7 +17,7 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = 'https://git.heroku.com/ermanbetovtor.git/';
+  const ENDPOINT = 'https://ermanbetovtor.herokuapp.com/';
 
 
   useEffect(() => {
